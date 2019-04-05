@@ -69,7 +69,6 @@ const createConnectionPool = function(query) {
 // });
 
 api.get('/db', createConnectionPool(query60days));
-//api.get('/last/100', createConnectionPool(queryLast100Pickups));
 api.get('/days/today', createConnectionPool(query1day));
 api.get('/days/15', createConnectionPool(query15days));
 api.get('/days/30', createConnectionPool(query30days));
